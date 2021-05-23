@@ -53226,7 +53226,7 @@ return G.a6D(new S.eh(s,new X.yJ(new L.py("ss.jpg"),C.od,C.b6),s,s,s,s,C.aP),r,p
 L:function(a,b){var s=this.c,r=t.c
 return B.Cl(T.ns(H.c([this.FU(b),s],r),C.b8,C.ms,C.aK),T.M9(H.c([this.FU(b),T.fc(null,b.T(t.w).f.a.b*0.1,null),s],r),C.b8,C.mq,C.aK))}}
 O.Si.prototype={
-$0:function(){C.W.j2(window,"https://drive.google.com/file/d/1zfsIhLgDvrPkR5upjjxyY1SaQvpuNSlb/view?usp=sharing","Resume")},
+$0:function(){C.W.j2(window,"https://docs.google.com/document/d/1E_RM02VyvLMC5UbF7AYcJdSYpO65lQfPZGZ6vK6lrxQ/edit?usp=sharing","Resume")},
 $S:1}
 O.Sj.prototype={
 $0:function(){},

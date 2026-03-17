@@ -296,3 +296,32 @@ document.querySelectorAll('.nav-links a').forEach(a => {
     }, 1200);
   });
 })();
+
+/* ── Theme Toggle ── */
+(function initTheme() {
+  const btn  = document.getElementById('theme-toggle');
+  const html = document.documentElement;
+
+  // Default is dark. Apply saved preference or system preference on load.
+  const saved  = localStorage.getItem('theme');
+  const system = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+  const initial = saved || system;
+  html.setAttribute('data-theme', initial);
+
+  if (!btn) return;
+
+  btn.addEventListener('click', () => {
+    const current = html.getAttribute('data-theme') || 'dark';
+    const next    = current === 'light' ? 'dark' : 'light';
+    html.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+
+    // Spin the icon on toggle
+    btn.style.transition = 'transform 0.35s ease';
+    btn.style.transform  = 'rotate(360deg)';
+    setTimeout(() => {
+      btn.style.transition = '';
+      btn.style.transform  = '';
+    }, 350);
+  });
+})();

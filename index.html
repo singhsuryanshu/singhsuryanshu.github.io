@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Suryanshu Singh — Developer Portfolio</title>
+  <meta name="description" content="Full-stack developer portfolio of Suryanshu Singh" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="scanline"></div>
+  <div class="noise"></div>
+  <div class="cursor-dot" id="dot"></div>
+  <div class="cursor-ring" id="ring"></div>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <div class="nav-logo">singhsuryanshu</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#github">GitHub</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-eyebrow">Available for work &mdash; <span>2026</span></div>
+    <h1>Building<br>things that<br><em>matter.</em></h1>
+    <p class="hero-desc">
+      Full-stack engineer obsessed with performance, clean architecture,
+      and experiences that feel inevitable.
+    </p>
+    <div class="hero-ctas">
+      <button class="btn-primary" data-scroll="projects">View Projects</button>
+      <a class="btn-outline" href="https://github.com/singhsuryanshu" target="_blank" rel="noopener">
+        GitHub ↗
+      </a>
+    </div>
+    <div class="hero-line"></div>
+    <div class="scroll-hint">Scroll to explore</div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-label">— About</div>
+    <div class="about-grid reveal">
+      <div class="about-text">
+        <div class="section-heading">Crafting<br><em>digital</em><br>systems.</div>
+        <p>I'm a software engineer who lives at the intersection of <strong>systems thinking and elegant interfaces</strong>. I believe the best code is invisible — it just works.</p>
+        <p>With a background spanning backend APIs, distributed systems, and pixel-precise frontends, I bring a full-picture perspective to every project I take on.</p>
+        <p>When I'm not writing code, I'm reading about it, thinking about it, or convincing people it matters more than they think.</p>
+      </div>
+      <div class="about-stats">
+        <div class="stat">
+          <div class="stat-num">5+</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">30+</div>
+          <div class="stat-label">Projects Shipped</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">12</div>
+          <div class="stat-label">Tech Stack Deep</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">∞</div>
+          <div class="stat-label">Curiosity Level</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-label">— Skills</div>
+    <div class="section-heading reveal">Tech<br><em>stack.</em></div>
+    <div class="skills-grid reveal" id="skills-grid">
+      <div class="skill-card" data-level="95">
+        <div class="skill-category">Frontend</div>
+        <div class="skill-name">React / Next.js</div>
+        <div class="skill-bar-wrap"><div class="skill-bar"></div></div>
+      </div>
+      <div class="skill-card" data-level="90">
+        <div class="skill-category">Language</div>
+        <div class="skill-name">TypeScript</div>
+        <div class="skill-bar-wrap"><div class="skill-bar"></div></div>
+      </div>
+      <div class="skill-card" data-level="88">
+        <div class="skill-category">Backend</div>
+        <div class="skill-name">Node.js / Go</div>
+        <div class="skill-bar-wrap"><div class="skill-bar"></div></div>
+      </div>
+      <div class="skill-card" data-level="82">
+        <div class="skill-category">Database</div>
+        <div class="skill-name">PostgreSQL</div>
+        <div class="skill-bar-wrap"><div class="skill-bar"></div></div>
+      </div>
+      <div class="skill-card" data-level="85">
+        <div class="skill-category">Cloud</div>
+        <div class="skill-name">AWS / GCP</div>
+        <div class="skill-bar-wrap"><div class="skill-bar"></div></div>
+      </div>
+      <div class="skill-card" data-level="78">
+        <div class="skill-category">DevOps</div>
+        <div class="skill-name">Docker / K8s</div>
+        <div class="skill-bar-wrap"><div class="skill-bar"></div></div>
+      </div>
+      <div class="skill-card" data-level="80">
+        <div class="skill-category">AI / ML</div>
+        <div class="skill-name">Python / PyTorch</div>
+        <div class="skill-bar-wrap"><div class="skill-bar"></div></div>
+      </div>
+      <div class="skill-card" data-level="92">
+        <div class="skill-category">Tooling</div>
+        <div class="skill-name">Git / CI/CD</div>
+        <div class="skill-bar-wrap"><div class="skill-bar"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-label">— Projects</div>
+    <div class="section-heading reveal">Selected<br><em>work.</em></div>
+    <div class="projects-list reveal">
+      <div class="project-item">
+        <div class="project-num">01</div>
+        <div class="project-info">
+          <div class="project-name">Axiom — Real-time Analytics</div>
+          <div class="project-desc">Event streaming platform processing 50M+ events/day with sub-100ms query latency.</div>
+        </div>
+        <div class="project-tags">
+          <span class="tag">Go</span><span class="tag">Kafka</span><span class="tag">ClickHouse</span>
+        </div>
+      </div>
+      <div class="project-item">
+        <div class="project-num">02</div>
+        <div class="project-info">
+          <div class="project-name">Lumina — Design System</div>
+          <div class="project-desc">Component library used by 3 products and 12 engineers. Zero runtime CSS-in-JS.</div>
+        </div>
+        <div class="project-tags">
+          <span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Storybook</span>
+        </div>
+      </div>
+      <div class="project-item">
+        <div class="project-num">03</div>
+        <div class="project-info">
+          <div class="project-name">Vaultify — Auth Infra</div>
+          <div class="project-desc">OAuth 2.0 + PKCE auth service with RBAC, supporting 200k monthly active users.</div>
+        </div>
+        <div class="project-tags">
+          <span class="tag">Node</span><span class="tag">Redis</span><span class="tag">JWT</span>
+        </div>
+      </div>
+      <div class="project-item">
+        <div class="project-num">04</div>
+        <div class="project-info">
+          <div class="project-name">Ghostwriter — LLM Pipeline</div>
+          <div class="project-desc">Prompt orchestration and caching layer that cut API costs by 60% without quality loss.</div>
+        </div>
+        <div class="project-tags">
+          <span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">Claude</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GITHUB REPOS -->
+  <section id="github">
+    <div class="section-label">— GitHub</div>
+    <div class="section-heading reveal">Open<br><em>source.</em></div>
+    <div class="github-meta reveal" id="github-meta">
+      <!-- populated by JS -->
+    </div>
+    <div class="repos-grid reveal" id="repos-grid">
+      <div class="repo-skeleton"></div>
+      <div class="repo-skeleton"></div>
+      <div class="repo-skeleton"></div>
+      <div class="repo-skeleton"></div>
+      <div class="repo-skeleton"></div>
+      <div class="repo-skeleton"></div>
+    </div>
+    <div class="repos-error hidden" id="repos-error">
+      Could not load repositories. <a href="https://github.com/singhsuryanshu" target="_blank">View on GitHub ↗</a>
+    </div>
+    <div class="repos-cta reveal">
+      <a class="btn-outline" href="https://github.com/singhsuryanshu" target="_blank" rel="noopener">
+        View all repos on GitHub ↗
+      </a>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-label">— Contact</div>
+    <div class="contact-grid reveal">
+      <div>
+        <div class="section-heading">Let's<br>build<br><em>together.</em></div>
+        <p class="contact-text">
+          Open to full-time roles, consulting, and interesting problems.
+          If you're building something ambitious, I want to hear about it.
+        </p>
+        <div class="contact-links">
+          <a class="contact-link" href="https://github.com/singhsuryanshu" target="_blank" rel="noopener">
+            <span>GitHub</span><span class="contact-link-arrow">↗</span>
+          </a>
+          <a class="contact-link" href="https://linkedin.com/in/singhsuryanshu" target="_blank" rel="noopener">
+            <span>LinkedIn</span><span class="contact-link-arrow">↗</span>
+          </a>
+          <a class="contact-link" href="mailto:hi@suryanshu.dev">
+            <span>hi@suryanshu.dev</span><span class="contact-link-arrow">↗</span>
+          </a>
+          <a class="contact-link" href="#" target="_blank">
+            <span>Resume / CV</span><span class="contact-link-arrow">↗</span>
+          </a>
+        </div>
+      </div>
+      <div class="contact-form-area">
+        <div class="form-group">
+          <label class="form-label" for="name">Name</label>
+          <input class="form-input" id="name" type="text" placeholder="Your name" />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="email">Email</label>
+          <input class="form-input" id="email" type="email" placeholder="your@email.com" />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="message">Message</label>
+          <textarea class="form-input" id="message" placeholder="What are you building?"></textarea>
+        </div>
+        <button class="btn-primary" style="width:100%" id="send-btn">Send Message</button>
+        <p class="form-status hidden" id="form-status"></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-copy">&copy; 2026 Suryanshu Singh — All rights reserved</div>
+    <a class="footer-tag" href="https://github.com/singhsuryanshu" target="_blank" rel="noopener">
+      @singhsuryanshu ↗
+    </a>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

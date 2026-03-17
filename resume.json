@@ -1,0 +1,134 @@
+{
+  "name": "Suryanshu Singh",
+  "title": "Software Engineer — Asset & Wealth Management",
+  "email": "001.suryanshu.singh@gmail.com",
+  "phone": "+91 6390678930",
+  "linkedin": "https://linkedin.com/in/singhsuryanshu",
+  "github": "https://github.com/singhsuryanshu",
+  "resumePdf": "./Suryanshu_Singh_Resume.pdf",
+
+  "hero": {
+    "eyebrow": "Associate SDE II @ Goldman Sachs",
+    "tagline": "Backend-focused software engineer building high-performance financial systems. Passionate about scalable architecture, data pipelines, and clean APIs."
+  },
+
+  "about": {
+    "paragraphs": [
+      "I'm a software engineer at <strong>Goldman Sachs</strong> in Asset & Wealth Management, where I own and scale backend compute pipelines, APIs, and data infrastructure for financial analytics.",
+      "From parallelising batch jobs and cutting runtimes by 20 minutes, to leading a <strong>SingleStore Cloud POC</strong> achieving 50% query performance improvement — I care deeply about the craft of building things that work at scale.",
+      "B.Tech in Computer Science from ABES Engineering College, Ghaziabad. Based in India."
+    ],
+    "stats": [
+      { "value": "3+",   "label": "Years at GS" },
+      { "value": "50%",  "label": "Query Perf Gain" },
+      { "value": "20m",  "label": "Batch Time Saved" },
+      { "value": "SDE II", "label": "Current Level" }
+    ]
+  },
+
+  "experience": [
+    {
+      "company": "Goldman Sachs",
+      "role": "Associate — SDE II",
+      "dept": "Asset & Wealth Management",
+      "period": "Jan 2026 — Present",
+      "bullets": [
+        "Leading a SingleStore Cloud POC, optimising analytical queries and achieving <strong>50% improvement</strong> in query performance for TWR, IRR, volatility, and regulatory workloads."
+      ]
+    },
+    {
+      "company": "Goldman Sachs",
+      "role": "Analyst — SDE I",
+      "dept": "Asset & Wealth Management",
+      "period": "Jul 2023 — Dec 2025",
+      "bullets": [
+        "Owned and scaled TWR Batch Compute and API backend pipelines, ensuring reliable daily batch execution and SLA compliance during periods of team attrition.",
+        "Reduced TWR Batch Compute runtime by <strong>20 minutes per run</strong> (avg. 5 hrs) by parallelising feed ingestion and copy operations, enabling additional intra-day compute cycles.",
+        "Designed concurrent feed processing using <strong>Java multithreading</strong>, improving throughput and stability.",
+        "Built and productionised a backend API for Forwards Notionals calculation, supporting migration from legacy systems.",
+        "Automated manual ingestion workflows using CI pipelines and Python, reducing operational overhead and minimising human error.",
+        "Implemented entitlement and access-control checks in regulatory dashboards to ensure compliance with risk management requirements.",
+        "Collaborated closely with Product, Ops, and DB teams to troubleshoot data-quality issues and deliver end-to-end backend solutions."
+      ]
+    },
+    {
+      "company": "Goldman Sachs",
+      "role": "Seasonal Analyst",
+      "dept": "Asset & Wealth Management",
+      "period": "Jan 2023 — Jun 2023",
+      "bullets": [
+        "Enhanced and shipped new features to the self-service UI dashboard built on Angular."
+      ]
+    },
+    {
+      "company": "Goldman Sachs",
+      "role": "Summer Analyst",
+      "dept": "Consumer & Wealth Management",
+      "period": "Jul 2022 — Aug 2022",
+      "bullets": []
+    },
+    {
+      "company": "Cipher Schools",
+      "role": "Teaching Assistant",
+      "dept": "",
+      "period": "Jan 2022 — Feb 2022",
+      "bullets": [
+        "Resolved student queries on C++ and organised live DSA practice sessions."
+      ]
+    },
+    {
+      "company": "Grow90",
+      "role": "Web Development Intern",
+      "dept": "",
+      "period": "Jul 2020 — Aug 2020",
+      "bullets": [
+        "Built a responsive e-commerce website using HTML, CSS, and JavaScript."
+      ]
+    }
+  ],
+
+  "skills": [
+    { "category": "Language",  "name": "Java",            "level": 92 },
+    { "category": "Language",  "name": "C++",             "level": 88 },
+    { "category": "Language",  "name": "Scala",           "level": 82 },
+    { "category": "Language",  "name": "SQL",             "level": 85 },
+    { "category": "Framework", "name": "Spring Boot",     "level": 90 },
+    { "category": "Framework", "name": "Angular",         "level": 78 },
+    { "category": "Database",  "name": "SingleStore DB",  "level": 86 },
+    { "category": "Mobile",    "name": "Flutter / Dart",  "level": 75 }
+  ],
+
+  "projects": [
+    {
+      "name": "Personal Expense Manager App",
+      "desc": "Mobile app to store and track personal daily expenses. Clean cross-platform experience built with Flutter and Dart.",
+      "tags": ["Flutter", "Dart"],
+      "url": ""
+    },
+    {
+      "name": "Portfolio Website",
+      "desc": "This site — dark cinematic portfolio with live GitHub repo integration, scroll animations, and custom cursor effects.",
+      "tags": ["HTML", "CSS", "JS"],
+      "url": "https://github.com/singhsuryanshu/portfolio"
+    },
+    {
+      "name": "E-commerce Website",
+      "desc": "Responsive e-commerce site built during internship at Grow90, focusing on UX and mobile-first design principles.",
+      "tags": ["HTML", "CSS", "JavaScript"],
+      "url": ""
+    }
+  ],
+
+  "education": [
+    {
+      "school": "ABES Engineering College, Ghaziabad",
+      "degree": "B.Tech — Computer Science & Engineering",
+      "period": "Aug 2019 – Jul 2023"
+    },
+    {
+      "school": "Sunbeam English School, Varanasi",
+      "degree": "10+2 Science",
+      "period": "Apr 2016 – May 2018"
+    }
+  ]
+}

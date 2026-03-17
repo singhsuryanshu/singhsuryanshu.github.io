@@ -1,20 +1,51 @@
 # singhsuryanshu — Personal Portfolio
 
-A dark, cinematic developer portfolio with live GitHub repo integration.
+A dark, cinematic developer portfolio with live GitHub repo integration and auto-deploy on resume update.
 
-**Live site:** [singhsuryanshu.github.io/portfolio](https://singhsuryanshu.github.io/portfolio) *(after deploying)*
+**Live site:** [singhsuryanshu.github.io/portfolio](https://singhsuryanshu.github.io/portfolio)
 
 ---
 
-## Features
+## Updating Your Resume
 
-- Dark cinematic aesthetic with film-grain overlay & scanline animation
-- Custom lag-cursor with interactive expand states
-- Scroll-triggered reveal animations
-- Animated skill bars
-- **Live GitHub repos** fetched at runtime via the GitHub API
-- Responsive mobile layout with hamburger nav
-- Contact form (ready to wire to Formspree / EmailJS)
+This site is wired so that **a single push auto-updates everything**.
+
+### Step 1 — Update your resume data
+Open `resume.json` and edit whatever changed — new job, new skill, updated bullet points. This file is the single source of truth for all content on the site.
+
+### Step 2 — Replace the PDF
+Drop your new PDF into the repo root, keeping the same filename:
+```
+Suryanshu_Singh_Resume.pdf
+```
+
+### Step 3 — Push
+```bash
+git add resume.json Suryanshu_Singh_Resume.pdf
+git commit -m "update: resume Q2 2026"
+git push
+```
+
+**That's it.** GitHub Actions deploys the site in ~60 seconds automatically.
+
+---
+
+## How it works
+
+```
+You push to main
+      ↓
+GitHub Actions triggers (.github/workflows/deploy.yml)
+      ↓
+Deploys entire repo to GitHub Pages
+      ↓
+Browser loads resume.json at runtime → renders all sections dynamically
+```
+
+- `resume.json` — all your content (experience, skills, projects, about)
+- `Suryanshu_Singh_Resume.pdf` — the downloadable PDF
+- `js/main.js` — fetches resume.json on page load and renders everything
+- `.github/workflows/deploy.yml` — auto-deploys on every push to main
 
 ---
 
@@ -22,70 +53,31 @@ A dark, cinematic developer portfolio with live GitHub repo integration.
 
 ```
 portfolio/
-├── index.html        # Main HTML
-├── css/
-│   └── style.css     # All styles + CSS variables
-├── js/
-│   └── main.js       # Cursor, animations, GitHub API, form
+├── index.html                    # Shell HTML
+├── resume.json                   # ← Edit this to update the site
+├── Suryanshu_Singh_Resume.pdf    # ← Replace this with new PDF
+├── css/style.css
+├── js/main.js
+├── .github/workflows/deploy.yml  # Auto-deploy workflow
 └── README.md
 ```
 
 ---
 
-## Customise It
+## First-time GitHub Pages setup
 
-1. **Your details** — update `index.html`:
-   - Name, bio, stats in the About section
-   - Projects list (name, description, tags)
-   - Contact links (LinkedIn, email, resume URL)
-
-2. **Skills** — edit the `.skill-card` blocks and `data-level` percentages in `index.html`
-
-3. **Contact form** — in `js/main.js`, replace the `setTimeout` mock in `initContactForm()` with a real endpoint:
-   - [Formspree](https://formspree.io) — easiest, free tier available
-   - [EmailJS](https://www.emailjs.com) — no backend required
-
----
-
-## Deploy to GitHub Pages
-
-```bash
-# 1. Create a new repo on GitHub named "portfolio" (or any name)
-
-# 2. Clone and add files
-git init
-git add .
-git commit -m "initial commit"
-git remote add origin https://github.com/singhsuryanshu/portfolio.git
-git push -u origin main
-
-# 3. Enable GitHub Pages
-# Go to repo → Settings → Pages → Source: Deploy from branch → main / root
-```
-
-Your site will be live at `https://singhsuryanshu.github.io/portfolio`
+1. Go to your repo → **Settings → Pages**
+2. Set **Source** to **GitHub Actions**
+3. Push any change — the first deploy runs automatically
 
 ---
 
 ## Local Development
 
-No build step needed — just open `index.html` in a browser.
-
-For live-reload during development:
 ```bash
-npx serve .
-# or
+cd portfolio
 python3 -m http.server 8080
+# open http://localhost:8080
 ```
 
----
-
-## Tech Stack
-
-- Vanilla HTML / CSS / JavaScript — zero dependencies
-- Google Fonts: [Syne](https://fonts.google.com/specimen/Syne) + [DM Mono](https://fonts.google.com/specimen/DM+Mono)
-- GitHub REST API v3
-
----
-
-*Built with Claude — [claude.ai](https://claude.ai)*
+*Must use a local server so resume.json fetches work correctly.*

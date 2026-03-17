@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Suryanshu Singh — Developer Portfolio</title>
-  <meta name="description" content="Full-stack developer portfolio of Suryanshu Singh" />
+  <title>Suryanshu Singh — Software Engineer</title>
+  <meta name="description" content="Software Engineer at Goldman Sachs. Full-stack developer specialising in backend systems, performance engineering, and scalable APIs." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
 
@@ -19,12 +19,14 @@
 
   <!-- NAV -->
   <nav id="nav">
-    <div class="nav-logo">singhsuryanshu</div>
+    <div class="nav-logo">suryanshu.dev</div>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#github">GitHub</a></li>
+      <li><a href="#resume">Resume</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
     <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
@@ -34,17 +36,15 @@
 
   <!-- HERO -->
   <section id="hero">
-    <div class="hero-eyebrow">Available for work &mdash; <span>2026</span></div>
-    <h1>Building<br>things that<br><em>matter.</em></h1>
+    <div class="hero-eyebrow">Associate SDE II @ Goldman Sachs &mdash; <span>2026</span></div>
+    <h1>Suryanshu<br>Singh.<br><em>Engineer.</em></h1>
     <p class="hero-desc">
-      Full-stack engineer obsessed with performance, clean architecture,
-      and experiences that feel inevitable.
+      Backend-focused software engineer building high-performance financial systems.
+      Passionate about scalable architecture, data pipelines, and clean APIs.
     </p>
     <div class="hero-ctas">
-      <button class="btn-primary" data-scroll="projects">View Projects</button>
-      <a class="btn-outline" href="https://github.com/singhsuryanshu" target="_blank" rel="noopener">
-        GitHub ↗
-      </a>
+      <button class="btn-primary" data-scroll="experience">View Experience</button>
+      <a class="btn-outline" href="https://github.com/singhsuryanshu" target="_blank" rel="noopener">GitHub ↗</a>
     </div>
     <div class="hero-line"></div>
     <div class="scroll-hint">Scroll to explore</div>
@@ -55,29 +55,118 @@
     <div class="section-label">— About</div>
     <div class="about-grid reveal">
       <div class="about-text">
-        <div class="section-heading">Crafting<br><em>digital</em><br>systems.</div>
-        <p>I'm a software engineer who lives at the intersection of <strong>systems thinking and elegant interfaces</strong>. I believe the best code is invisible — it just works.</p>
-        <p>With a background spanning backend APIs, distributed systems, and pixel-precise frontends, I bring a full-picture perspective to every project I take on.</p>
-        <p>When I'm not writing code, I'm reading about it, thinking about it, or convincing people it matters more than they think.</p>
+        <div class="section-heading">Building<br><em>systems</em><br>that scale.</div>
+        <p>I'm a software engineer at <strong>Goldman Sachs</strong> in Asset & Wealth Management, where I own and scale backend compute pipelines, APIs, and data infrastructure for financial analytics.</p>
+        <p>From parallelising batch jobs and cutting runtimes by 20 minutes, to leading a <strong>SingleStore Cloud POC</strong> achieving 50% query performance improvement — I care deeply about the craft of building things that work at scale.</p>
+        <p>B.Tech in Computer Science from ABES Engineering College, Ghaziabad. Based in India.</p>
       </div>
       <div class="about-stats">
         <div class="stat">
-          <div class="stat-num">5+</div>
-          <div class="stat-label">Years Experience</div>
+          <div class="stat-num">3+</div>
+          <div class="stat-label">Years at GS</div>
         </div>
         <div class="stat">
-          <div class="stat-num">30+</div>
-          <div class="stat-label">Projects Shipped</div>
+          <div class="stat-num">50%</div>
+          <div class="stat-label">Query Perf Gain</div>
         </div>
         <div class="stat">
-          <div class="stat-num">12</div>
-          <div class="stat-label">Tech Stack Deep</div>
+          <div class="stat-num">20m</div>
+          <div class="stat-label">Batch Time Saved</div>
         </div>
         <div class="stat">
-          <div class="stat-num">∞</div>
-          <div class="stat-label">Curiosity Level</div>
+          <div class="stat-num">SDE II</div>
+          <div class="stat-label">Current Level</div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="section-label">— Experience</div>
+    <div class="section-heading reveal">Where I've<br><em>worked.</em></div>
+    <div class="timeline reveal">
+
+      <div class="timeline-item">
+        <div class="timeline-meta">
+          <div class="timeline-company">Goldman Sachs</div>
+          <div class="timeline-period">Jan 2026 — Present</div>
+        </div>
+        <div class="timeline-body">
+          <div class="timeline-role">Associate — SDE II <span class="timeline-dept">Asset & Wealth Management</span></div>
+          <ul class="timeline-bullets">
+            <li>Leading a SingleStore Cloud POC, optimising analytical queries and achieving <strong>50% improvement</strong> in query performance for TWR, IRR, volatility, and regulatory workloads.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-meta">
+          <div class="timeline-company">Goldman Sachs</div>
+          <div class="timeline-period">Jul 2023 — Dec 2025</div>
+        </div>
+        <div class="timeline-body">
+          <div class="timeline-role">Analyst — SDE I <span class="timeline-dept">Asset & Wealth Management</span></div>
+          <ul class="timeline-bullets">
+            <li>Owned and scaled TWR Batch Compute and API backend pipelines, ensuring reliable daily batch execution and SLA compliance.</li>
+            <li>Reduced TWR Batch Compute runtime by <strong>20 minutes per run</strong> by parallelising feed ingestion and copy operations, enabling additional intra-day compute cycles.</li>
+            <li>Designed concurrent feed processing using <strong>Java multithreading</strong>, improving throughput and stability.</li>
+            <li>Built and productionised a backend API for Forwards Notionals calculation, supporting migration from legacy systems.</li>
+            <li>Automated manual ingestion workflows using CI pipelines and Python, reducing operational overhead and human error.</li>
+            <li>Implemented entitlement and access-control checks in regulatory dashboards to ensure compliance.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-meta">
+          <div class="timeline-company">Goldman Sachs</div>
+          <div class="timeline-period">Jan 2023 — Jun 2023</div>
+        </div>
+        <div class="timeline-body">
+          <div class="timeline-role">Seasonal Analyst <span class="timeline-dept">Asset & Wealth Management</span></div>
+          <ul class="timeline-bullets">
+            <li>Enhanced and shipped new features to the self-service UI dashboard built on Angular.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-meta">
+          <div class="timeline-company">Goldman Sachs</div>
+          <div class="timeline-period">Jul 2022 — Aug 2022</div>
+        </div>
+        <div class="timeline-body">
+          <div class="timeline-role">Summer Analyst <span class="timeline-dept">Consumer & Wealth Management</span></div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-meta">
+          <div class="timeline-company">Cipher Schools</div>
+          <div class="timeline-period">Jan 2022 — Feb 2022</div>
+        </div>
+        <div class="timeline-body">
+          <div class="timeline-role">Teaching Assistant</div>
+          <ul class="timeline-bullets">
+            <li>Resolved student queries on C++ and organised live DSA practice sessions.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-meta">
+          <div class="timeline-company">Grow90</div>
+          <div class="timeline-period">Jul 2020 — Aug 2020</div>
+        </div>
+        <div class="timeline-body">
+          <div class="timeline-role">Web Development Intern</div>
+          <ul class="timeline-bullets">
+            <li>Built a responsive e-commerce website using HTML, CSS, and JavaScript.</li>
+          </ul>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -86,44 +175,44 @@
     <div class="section-label">— Skills</div>
     <div class="section-heading reveal">Tech<br><em>stack.</em></div>
     <div class="skills-grid reveal" id="skills-grid">
-      <div class="skill-card" data-level="95">
-        <div class="skill-category">Frontend</div>
-        <div class="skill-name">React / Next.js</div>
-        <div class="skill-bar-wrap"><div class="skill-bar"></div></div>
-      </div>
-      <div class="skill-card" data-level="90">
+      <div class="skill-card" data-level="92">
         <div class="skill-category">Language</div>
-        <div class="skill-name">TypeScript</div>
+        <div class="skill-name">Java</div>
         <div class="skill-bar-wrap"><div class="skill-bar"></div></div>
       </div>
       <div class="skill-card" data-level="88">
-        <div class="skill-category">Backend</div>
-        <div class="skill-name">Node.js / Go</div>
+        <div class="skill-category">Language</div>
+        <div class="skill-name">C++</div>
         <div class="skill-bar-wrap"><div class="skill-bar"></div></div>
       </div>
       <div class="skill-card" data-level="82">
-        <div class="skill-category">Database</div>
-        <div class="skill-name">PostgreSQL</div>
+        <div class="skill-category">Language</div>
+        <div class="skill-name">Scala</div>
         <div class="skill-bar-wrap"><div class="skill-bar"></div></div>
       </div>
       <div class="skill-card" data-level="85">
-        <div class="skill-category">Cloud</div>
-        <div class="skill-name">AWS / GCP</div>
+        <div class="skill-category">Language</div>
+        <div class="skill-name">SQL</div>
+        <div class="skill-bar-wrap"><div class="skill-bar"></div></div>
+      </div>
+      <div class="skill-card" data-level="90">
+        <div class="skill-category">Framework</div>
+        <div class="skill-name">Spring Boot</div>
         <div class="skill-bar-wrap"><div class="skill-bar"></div></div>
       </div>
       <div class="skill-card" data-level="78">
-        <div class="skill-category">DevOps</div>
-        <div class="skill-name">Docker / K8s</div>
+        <div class="skill-category">Framework</div>
+        <div class="skill-name">Angular</div>
         <div class="skill-bar-wrap"><div class="skill-bar"></div></div>
       </div>
-      <div class="skill-card" data-level="80">
-        <div class="skill-category">AI / ML</div>
-        <div class="skill-name">Python / PyTorch</div>
+      <div class="skill-card" data-level="86">
+        <div class="skill-category">Database</div>
+        <div class="skill-name">SingleStore DB</div>
         <div class="skill-bar-wrap"><div class="skill-bar"></div></div>
       </div>
-      <div class="skill-card" data-level="92">
-        <div class="skill-category">Tooling</div>
-        <div class="skill-name">Git / CI/CD</div>
+      <div class="skill-card" data-level="75">
+        <div class="skill-category">Mobile</div>
+        <div class="skill-name">Flutter / Dart</div>
         <div class="skill-bar-wrap"><div class="skill-bar"></div></div>
       </div>
     </div>
@@ -132,46 +221,36 @@
   <!-- PROJECTS -->
   <section id="projects">
     <div class="section-label">— Projects</div>
-    <div class="section-heading reveal">Selected<br><em>work.</em></div>
+    <div class="section-heading reveal">Personal<br><em>work.</em></div>
     <div class="projects-list reveal">
       <div class="project-item">
         <div class="project-num">01</div>
         <div class="project-info">
-          <div class="project-name">Axiom — Real-time Analytics</div>
-          <div class="project-desc">Event streaming platform processing 50M+ events/day with sub-100ms query latency.</div>
+          <div class="project-name">Personal Expense Manager App</div>
+          <div class="project-desc">Mobile app to store and track personal daily expenses. Clean cross-platform experience built with Flutter and Dart.</div>
         </div>
         <div class="project-tags">
-          <span class="tag">Go</span><span class="tag">Kafka</span><span class="tag">ClickHouse</span>
+          <span class="tag">Flutter</span><span class="tag">Dart</span>
         </div>
       </div>
       <div class="project-item">
         <div class="project-num">02</div>
         <div class="project-info">
-          <div class="project-name">Lumina — Design System</div>
-          <div class="project-desc">Component library used by 3 products and 12 engineers. Zero runtime CSS-in-JS.</div>
+          <div class="project-name">Portfolio Website</div>
+          <div class="project-desc">This site — dark cinematic portfolio with live GitHub repo integration, scroll animations, and custom cursor effects.</div>
         </div>
         <div class="project-tags">
-          <span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Storybook</span>
+          <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span>
         </div>
       </div>
       <div class="project-item">
         <div class="project-num">03</div>
         <div class="project-info">
-          <div class="project-name">Vaultify — Auth Infra</div>
-          <div class="project-desc">OAuth 2.0 + PKCE auth service with RBAC, supporting 200k monthly active users.</div>
+          <div class="project-name">E-commerce Website</div>
+          <div class="project-desc">Responsive e-commerce site built during internship at Grow90, focusing on UX and mobile-first design principles.</div>
         </div>
         <div class="project-tags">
-          <span class="tag">Node</span><span class="tag">Redis</span><span class="tag">JWT</span>
-        </div>
-      </div>
-      <div class="project-item">
-        <div class="project-num">04</div>
-        <div class="project-info">
-          <div class="project-name">Ghostwriter — LLM Pipeline</div>
-          <div class="project-desc">Prompt orchestration and caching layer that cut API costs by 60% without quality loss.</div>
-        </div>
-        <div class="project-tags">
-          <span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">Claude</span>
+          <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
         </div>
       </div>
     </div>
@@ -181,9 +260,7 @@
   <section id="github">
     <div class="section-label">— GitHub</div>
     <div class="section-heading reveal">Open<br><em>source.</em></div>
-    <div class="github-meta reveal" id="github-meta">
-      <!-- populated by JS -->
-    </div>
+    <div class="github-meta reveal" id="github-meta"></div>
     <div class="repos-grid reveal" id="repos-grid">
       <div class="repo-skeleton"></div>
       <div class="repo-skeleton"></div>
@@ -196,9 +273,152 @@
       Could not load repositories. <a href="https://github.com/singhsuryanshu" target="_blank">View on GitHub ↗</a>
     </div>
     <div class="repos-cta reveal">
-      <a class="btn-outline" href="https://github.com/singhsuryanshu" target="_blank" rel="noopener">
-        View all repos on GitHub ↗
-      </a>
+      <a class="btn-outline" href="https://github.com/singhsuryanshu" target="_blank" rel="noopener">View all repos on GitHub ↗</a>
+    </div>
+  </section>
+
+  <!-- RESUME -->
+  <section id="resume">
+    <div class="section-label">— Resume</div>
+    <div class="section-heading reveal">My<br><em>resume.</em></div>
+    <div class="resume-wrapper reveal">
+      <div class="resume-actions">
+        <a class="btn-primary" href="./Suryanshu_Singh_Resume.pdf" download="Suryanshu_Singh_Resume.pdf">Download PDF ↓</a>
+        <a class="btn-outline" href="./Suryanshu_Singh_Resume.pdf" target="_blank">Open in new tab ↗</a>
+      </div>
+      <div class="resume-card">
+
+        <div class="rv-header">
+          <div>
+            <div class="rv-name">Suryanshu Singh</div>
+            <div class="rv-title">Software Engineer — Asset & Wealth Management, Goldman Sachs</div>
+          </div>
+          <div class="rv-contact-block">
+            <a href="mailto:001.suryanshu.singh@gmail.com">001.suryanshu.singh@gmail.com</a>
+            <a href="tel:+916390678930">+91 6390678930</a>
+            <a href="https://linkedin.com/in/singhsuryanshu" target="_blank">linkedin.com/in/singhsuryanshu</a>
+            <a href="https://github.com/singhsuryanshu" target="_blank">github.com/singhsuryanshu</a>
+          </div>
+        </div>
+
+        <div class="rv-divider"></div>
+
+        <div class="rv-section">
+          <div class="rv-section-title">Education</div>
+          <div class="rv-edu-item">
+            <div class="rv-edu-school">ABES Engineering College, Ghaziabad</div>
+            <div class="rv-edu-meta">B.Tech — Computer Science & Engineering &nbsp;·&nbsp; Aug 2019 – Jul 2023</div>
+          </div>
+          <div class="rv-edu-item">
+            <div class="rv-edu-school">Sunbeam English School, Varanasi</div>
+            <div class="rv-edu-meta">10+2 Science &nbsp;·&nbsp; Apr 2016 – May 2018</div>
+          </div>
+        </div>
+
+        <div class="rv-divider"></div>
+
+        <div class="rv-section">
+          <div class="rv-section-title">Skills</div>
+          <div class="rv-skills-row">
+            <span class="rv-skill-group"><span class="rv-skill-label">Languages</span> C++, SQL, Java, Scala</span>
+            <span class="rv-skill-group"><span class="rv-skill-label">Frameworks</span> Spring Boot, Angular</span>
+            <span class="rv-skill-group"><span class="rv-skill-label">Databases</span> SingleStore DB</span>
+          </div>
+        </div>
+
+        <div class="rv-divider"></div>
+
+        <div class="rv-section">
+          <div class="rv-section-title">Experience</div>
+
+          <div class="rv-exp-item">
+            <div class="rv-exp-header">
+              <div class="rv-exp-company">Goldman Sachs</div>
+              <div class="rv-exp-period">Jan 2026 — Present</div>
+            </div>
+            <div class="rv-exp-role">Associate (SDE II) — Asset and Wealth Management</div>
+            <ul class="rv-exp-bullets">
+              <li>Leading a SingleStore Cloud POC, optimising analytical queries and achieving <strong>50% improvement</strong> in query performance for TWR, IRR, volatility, and regulatory workloads.</li>
+            </ul>
+          </div>
+
+          <div class="rv-exp-item">
+            <div class="rv-exp-header">
+              <div class="rv-exp-company">Goldman Sachs</div>
+              <div class="rv-exp-period">Jul 2023 — Dec 2025</div>
+            </div>
+            <div class="rv-exp-role">Analyst (SDE I) — Asset and Wealth Management</div>
+            <ul class="rv-exp-bullets">
+              <li>Owned and scaled TWR Batch Compute and API backend pipelines, ensuring reliable daily batch execution and SLA compliance during periods of team attrition.</li>
+              <li>Reduced TWR Batch Compute runtime by <strong>20 minutes per run</strong> (avg. 5 hrs) by parallelising feed ingestion and copy operations, enabling additional intra-day compute cycles.</li>
+              <li>Designed and implemented concurrent feed processing using <strong>Java multithreading</strong>, improving throughput and stability.</li>
+              <li>Built and productionised a backend API for Forwards Notionals calculation, supporting migration from legacy systems.</li>
+              <li>Automated manual ingestion workflows using CI pipelines and Python, reducing operational overhead and minimising human error.</li>
+              <li>Implemented entitlement and access-control checks in regulatory dashboards to ensure compliance with risk management requirements.</li>
+              <li>Collaborated closely with Product, Ops, and DB teams to troubleshoot data-quality issues and deliver end-to-end backend solutions.</li>
+            </ul>
+          </div>
+
+          <div class="rv-exp-item">
+            <div class="rv-exp-header">
+              <div class="rv-exp-company">Goldman Sachs</div>
+              <div class="rv-exp-period">Jan 2023 — Jun 2023</div>
+            </div>
+            <div class="rv-exp-role">Seasonal Analyst — Asset and Wealth Management</div>
+            <ul class="rv-exp-bullets">
+              <li>Worked on enhancing and adding new features to the self-service UI dashboard built on Angular.</li>
+            </ul>
+          </div>
+
+          <div class="rv-exp-item">
+            <div class="rv-exp-header">
+              <div class="rv-exp-company">Cipher Schools</div>
+              <div class="rv-exp-period">Jan 2022 — Feb 2022</div>
+            </div>
+            <div class="rv-exp-role">Teaching Assistant</div>
+            <ul class="rv-exp-bullets">
+              <li>Resolved student queries related to C++ and organised live practice sessions on DSA problems.</li>
+            </ul>
+          </div>
+
+          <div class="rv-exp-item">
+            <div class="rv-exp-header">
+              <div class="rv-exp-company">Grow90</div>
+              <div class="rv-exp-period">Jul 2020 — Aug 2020</div>
+            </div>
+            <div class="rv-exp-role">Web Development Intern</div>
+            <ul class="rv-exp-bullets">
+              <li>Created a responsive e-commerce website based on user experience using HTML, CSS, and JavaScript.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="rv-divider"></div>
+
+        <div class="rv-section">
+          <div class="rv-section-title">Personal Projects</div>
+          <div class="rv-exp-item">
+            <div class="rv-exp-role">Personal Expense Manager App</div>
+            <ul class="rv-exp-bullets">
+              <li>Created an app to store personal daily expenses. Built using Flutter and Dart.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="rv-divider"></div>
+
+        <div class="rv-section">
+          <div class="rv-section-title">Volunteer Experience</div>
+          <div class="rv-exp-item">
+            <div class="rv-exp-header">
+              <div class="rv-exp-company">Technovation — ABES Engineering College</div>
+              <div class="rv-exp-period">Aug 2020 — Jun 2023</div>
+            </div>
+            <div class="rv-exp-role">Administrative Head, Technical Club</div>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 
@@ -209,8 +429,8 @@
       <div>
         <div class="section-heading">Let's<br>build<br><em>together.</em></div>
         <p class="contact-text">
-          Open to full-time roles, consulting, and interesting problems.
-          If you're building something ambitious, I want to hear about it.
+          Open to interesting engineering problems, collaborations, and conversations.
+          Feel free to reach out any time.
         </p>
         <div class="contact-links">
           <a class="contact-link" href="https://github.com/singhsuryanshu" target="_blank" rel="noopener">
@@ -219,11 +439,11 @@
           <a class="contact-link" href="https://linkedin.com/in/singhsuryanshu" target="_blank" rel="noopener">
             <span>LinkedIn</span><span class="contact-link-arrow">↗</span>
           </a>
-          <a class="contact-link" href="mailto:hi@suryanshu.dev">
-            <span>hi@suryanshu.dev</span><span class="contact-link-arrow">↗</span>
+          <a class="contact-link" href="mailto:001.suryanshu.singh@gmail.com">
+            <span>001.suryanshu.singh@gmail.com</span><span class="contact-link-arrow">↗</span>
           </a>
-          <a class="contact-link" href="#" target="_blank">
-            <span>Resume / CV</span><span class="contact-link-arrow">↗</span>
+          <a class="contact-link" href="./Suryanshu_Singh_Resume.pdf" download>
+            <span>Download Resume</span><span class="contact-link-arrow">↓</span>
           </a>
         </div>
       </div>
@@ -238,7 +458,7 @@
         </div>
         <div class="form-group">
           <label class="form-label" for="message">Message</label>
-          <textarea class="form-input" id="message" placeholder="What are you building?"></textarea>
+          <textarea class="form-input" id="message" placeholder="What's on your mind?"></textarea>
         </div>
         <button class="btn-primary" style="width:100%" id="send-btn">Send Message</button>
         <p class="form-status hidden" id="form-status"></p>
@@ -248,11 +468,9 @@
 
   <footer>
     <div class="footer-copy">&copy; 2026 Suryanshu Singh — All rights reserved</div>
-    <a class="footer-tag" href="https://github.com/singhsuryanshu" target="_blank" rel="noopener">
-      @singhsuryanshu ↗
-    </a>
+    <a class="footer-tag" href="https://github.com/singhsuryanshu" target="_blank" rel="noopener">@singhsuryanshu ↗</a>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 </html>
